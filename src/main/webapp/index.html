@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM System - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    * { scroll-behavior: smooth; }
+    .hero-section { background: linear-gradient(135deg, #0d0d0d, #1a1a2e); min-height: 100vh; }
+    .stat-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; transition: transform 0.3s; }
+    .stat-box:hover { transform: translateY(-4px); background: rgba(255,255,255,0.1); }
+    .feature-card { transition: transform 0.3s; }
+    .feature-card:hover { transform: translateY(-5px); }
+    .step-number { width: 44px; height: 44px; background: #212529; color: #fff; border-radius: 50%; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-black py-3 px-4 sticky-top">
+    <a class="navbar-brand text-white fw-bold fs-4" href="#">CRM SYSTEM</a>
+    <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-3 align-items-center">
+        <li class="nav-item"><a class="nav-link text-white-50" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light btn-sm px-3" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="btn btn-light btn-sm px-3 fw-semibold text-dark" href="register.html">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <span class="badge bg-secondary bg-opacity-50 text-white px-3 py-2 mb-4 d-inline-block">
+            🚀 Customer Relationship Management
+          </span>
+          <h1 class="display-4 fw-bold text-white mb-4">
+            Manage Your Customers<br/>
+            <span class="text-white-50">Smarter &amp; Faster</span>
+          </h1>
+          <p class="text-secondary mb-4">A simple CRM platform to manage customers, appointments, notes and branches — all from one dashboard.</p>
+          <div class="d-flex gap-3 flex-wrap mb-4">
+            <a href="register.html" class="btn btn-light text-dark fw-bold px-4">Get Started Free</a>
+            <a href="login.html" class="btn btn-outline-light px-4">Sign In</a>
+          </div>
+          <div class="d-flex gap-4">
+            <div>
+              <p class="text-white fw-bold fs-5 mb-0">50+</p>
+              <p class="text-secondary small mb-0">Customers</p>
+            </div>
+            <div class="border-start border-secondary ps-4">
+              <p class="text-white fw-bold fs-5 mb-0">12+</p>
+              <p class="text-secondary small mb-0">Appointments</p>
+            </div>
+            <div class="border-start border-secondary ps-4">
+              <p class="text-white fw-bold fs-5 mb-0">3</p>
+              <p class="text-secondary small mb-0">Branches</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat-box p-4 text-center">
+                <div class="fs-1 mb-2">👥</div>
+                <h6 class="text-white fw-bold mb-1">Customers</h6>
+                <p class="text-secondary small mb-0">Full contact &amp; branch records</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box p-4 text-center">
+                <div class="fs-1 mb-2">📅</div>
+                <h6 class="text-white fw-bold mb-1">Appointments</h6>
+                <p class="text-secondary small mb-0">Book &amp; track by date and time</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box p-4 text-center">
+                <div class="fs-1 mb-2">📝</div>
+                <h6 class="text-white fw-bold mb-1">Notes</h6>
+                <p class="text-secondary small mb-0">Save follow-ups instantly</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box p-4 text-center">
+                <div class="fs-1 mb-2">🏢</div>
+                <h6 class="text-white fw-bold mb-1">Branches</h6>
+                <p class="text-secondary small mb-0">SHEGAON, KHAMGAON, AKOLA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5 bg-light" id="features">
+    <div class="container">
+      <h4 class="fw-bold text-center mb-2">Key Features</h4>
+      <p class="text-muted text-center small mb-5">Everything you need to manage your customer operations.</p>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 p-4 feature-card">
+            <div class="fs-2 mb-3">👥</div>
+            <h6 class="fw-bold mb-2">Customer Management</h6>
+            <p class="text-muted small mb-0">Add, view and manage all your customers with contact and branch details.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 p-4 feature-card">
+            <div class="fs-2 mb-3">📅</div>
+            <h6 class="fw-bold mb-2">Appointments</h6>
+            <p class="text-muted small mb-0">Schedule and track appointments by date, time and branch.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 p-4 feature-card">
+            <div class="fs-2 mb-3">📝</div>
+            <h6 class="fw-bold mb-2">Notes &amp; Follow-ups</h6>
+            <p class="text-muted small mb-0">Keep reminders and follow-up notes against each customer.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 p-4 feature-card">
+            <div class="fs-2 mb-3">📊</div>
+            <h6 class="fw-bold mb-2">Reports</h6>
+            <p class="text-muted small mb-0">View activity reports across customers and branches at a glance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5 bg-white" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <h4 class="fw-bold mb-3">About CRM System</h4>
+          <p class="text-muted mb-3">Built for businesses that want a clean and efficient way to handle customer relationships across multiple branches.</p>
+          <p class="text-muted mb-4">Built with Java Servlets, JSP and MySQL — reliable and easy to use.</p>
+          <div class="d-flex gap-4">
+            <div>
+              <h5 class="fw-bold mb-0">50+</h5>
+              <p class="text-muted small">Customers</p>
+            </div>
+            <div class="border-start ps-4">
+              <h5 class="fw-bold mb-0">3</h5>
+              <p class="text-muted small">Branches</p>
+            </div>
+            <div class="border-start ps-4">
+              <h5 class="fw-bold mb-0">2</h5>
+              <p class="text-muted small">Portals</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="card border-0 shadow-sm p-4 h-100 feature-card">
+                <div class="fs-2 mb-2">🔐</div>
+                <h6 class="fw-bold mb-1">Admin Portal</h6>
+                <p class="text-muted small mb-0">Full control over customers, appointments, notes and branches.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card border-0 shadow-sm p-4 h-100 feature-card">
+                <div class="fs-2 mb-2">👤</div>
+                <h6 class="fw-bold mb-1">Customer Portal</h6>
+                <p class="text-muted small mb-0">View appointments and profile from a self-service portal.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card border-0 shadow-sm p-4 h-100 feature-card">
+                <div class="fs-2 mb-2">🔒</div>
+                <h6 class="fw-bold mb-1">Secure Login</h6>
+                <p class="text-muted small mb-0">Separate authentication for admin and customer roles.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card border-0 shadow-sm p-4 h-100 feature-card">
+                <div class="fs-2 mb-2">🏢</div>
+                <h6 class="fw-bold mb-1">Multi-Branch</h6>
+                <p class="text-muted small mb-0">Supports SHEGAON, KHAMGAON and AKOLA branches.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <h4 class="fw-bold text-center mb-2">Contact Us</h4>
+      <p class="text-muted text-center small mb-5">Have a question? We'd love to hear from you.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm p-4">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your full name"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="your@email.com"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+            <button class="btn btn-dark w-100">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-black text-white text-center py-5">
+    <div class="container">
+      <h4 class="fw-bold mb-2">Ready to Get Started?</h4>
+      <p class="text-secondary small mb-4">Create your account and start managing your customers today.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="register.html" class="btn btn-light text-dark fw-bold px-5">Register Now</a>
+        <a href="login.html" class="btn btn-outline-light px-5">Admin Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center py-4 border-top border-secondary">
+    <p class="text-secondary small mb-0">CRM Management System &nbsp;|&nbsp; Developed by Yash Fundkar &nbsp;&copy; 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

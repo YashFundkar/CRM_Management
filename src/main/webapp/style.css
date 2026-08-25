@@ -1,0 +1,223 @@
+/* =========================
+   GENERAL
+========================= */
+
+body{
+    background:#f5f7fb;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#1f2937 !important;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.navbar-brand h1{
+    margin:0;
+    font-size:2rem;
+    font-weight:600;
+}
+
+.navbar .form-control{
+    border-radius:10px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.list-group{
+    border:none;
+}
+
+.list-group-item{
+    border:none !important;
+    background:transparent;
+    padding:15px 12px;
+    color:#333;
+    font-size:16px;
+    transition:0.3s;
+    border-radius:10px !important;
+    margin-bottom:8px;
+}
+
+.list-group-item:hover{
+    background:#f1f5f9;
+    color:#000;
+    transform:translateX(5px);
+}
+
+.list-group-item.active{
+    background:#000 !important;
+    color:#fff !important;
+}
+
+/* =========================
+   MAIN DASHBOARD
+========================= */
+
+.welcome-banner{
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #9333ea,
+        #ec4899
+    );
+    color:white;
+    border-radius:20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-s:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   STATISTICS CARDS
+========================= */
+
+.stat-card{
+	min-height: 130px;
+}
+
+.stat-card .card-body{
+    padding: 2 rem ;
+}
+.stat-card h1{
+    font-size:42px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.stat-card h4{
+    font-size:25px;
+    font-weight:600;
+}
+
+
+
+/* =========================
+   CARD HEADERS
+========================= */
+
+.card-header{
+    background:#fff !important;
+    color:#333 !important;
+    font-weight:600;
+    border-bottom:1px solid #e5e7eb;
+    border-radius:18px 18px 0 0 !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-dark{
+    background:#000;
+    border:none;
+}
+
+.btn-dark:hover{
+    background:#222;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table th{
+    background:#f8fafc;
+}
+
+.table{
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-control,
+.form-select{
+    border-radius:8px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#9333ea;
+}
+
+/* =========================
+   LIST GROUP INSIDE CARDS
+========================= */
+
+.list-group-item{
+    border:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
+}
+
+/* =========================
+   SIDEBAR HEIGHT
+========================= */
+
+.vh-100{
+    min-height:100vh;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#94a3b8;
+}

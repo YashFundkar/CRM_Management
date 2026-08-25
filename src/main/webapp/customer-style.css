@@ -1,0 +1,291 @@
+/* =========================
+   CUSTOMER MODULE THEME
+========================= */
+
+body{
+    background:#f4f7fc;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.customer-sidebar{
+    background:#ffffff;
+    min-height:100vh;
+    box-shadow:4px 0 15px rgba(0,0,0,.08);
+    border-right:none;
+}
+
+.customer-sidebar .sidebar-logo{
+    background:linear-gradient(135deg,#0d6efd,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+.customer-sidebar .sidebar-logo h4{
+    margin:0;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.customer-sidebar .sidebar-logo small{
+    opacity:.8;
+}
+
+.customer-sidebar .nav-link{
+    color:#495057;
+    padding:14px 18px;
+    border-radius:12px;
+    margin:8px 12px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    transition:.3s;
+}
+
+.customer-sidebar .nav-link:hover{
+    background:#e9f2ff;
+    color:#0d6efd;
+    transform:translateX(6px);
+}
+
+.customer-sidebar .active{
+    background:linear-gradient(135deg,#0d6efd,#3b82f6);
+    color:white !important;
+    box-shadow:0 8px 20px rgba(13,110,253,.30);
+}
+
+.customer-sidebar .active:hover{
+    color:white !important;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.customer-navbar{
+    background:linear-gradient(135deg,#0d6efd,#3b82f6);
+    box-shadow:0 4px 12px rgba(0,0,0,.10);
+}
+
+.customer-navbar .navbar-brand{
+    color:white;
+    font-weight:700;
+    font-size:24px;
+}
+
+.customer-navbar .welcome{
+    color:white;
+    font-weight:500;
+}
+
+.customer-navbar .icon-btn{
+    color:white;
+    font-size:20px;
+    margin-left:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.customer-navbar .icon-btn:hover{
+    transform:scale(1.15);
+}
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card{
+    background:linear-gradient(135deg,#0d6efd,#60a5fa);
+    color:white;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(13,110,253,.20);
+}
+
+.hero-card h2{
+    font-weight:700;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stats-card{
+    border:none;
+    border-radius:18px;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.stats-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.stats-card h3{
+    font-weight:700;
+    color:#0d6efd;
+}
+
+.stats-card i{
+    font-size:32px;
+    color:#0d6efd;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.section-card:hover{
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.section-title{
+    font-weight:600;
+    color:#0d6efd;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table thead{
+    background:#f8f9fa;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#f1f7ff;
+}
+
+/* =========================
+   PROFILE CARD
+========================= */
+
+.profile-card{
+    border:none;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.profile-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0d6efd,#60a5fa);
+    color:white;
+    font-size:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    box-shadow:0 6px 15px rgba(13,110,253,.25);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-customer{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px 20px;
+    transition:.3s;
+}
+
+.btn-customer:hover{
+    background:#0b5ed7;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   NOTES
+========================= */
+
+.note-card{
+    border-left:4px solid #0d6efd;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.note-card:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   APPOINTMENT STATUS
+========================= */
+
+.status-scheduled{
+    background:#0d6efd;
+    color:white;
+}
+
+.status-completed{
+    background:#198754;
+    color:white;
+}
+
+.status-cancelled{
+    background:#dc3545;
+    color:white;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:10px;
+}
+
+/* Sidebar Links */
+
+.nav-link{
+    padding:12px 20px;
+    margin:5px 10px;
+    border-radius:10px;
+    transition:all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.nav-link:hover{
+    background:#e9f2ff;
+    color:#0d6efd !important;
+    transform:translateX(8px);
+    box-shadow:0 4px 10px rgba(13,110,253,0.15);
+}
+
+/* Active Page */
+
+.nav-link.active{
+    background:linear-gradient(135deg,#06b6d4,#3b82f6);
+    color:white !important;
+    box-shadow:0 6px 15px rgba(59,130,246,0.3);
+}

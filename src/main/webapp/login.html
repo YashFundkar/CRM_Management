@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System - Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-body-secondary">
+
+<div class="container-fluid">
+    <div class="row min-vh-100">
+
+        <!-- Left CRM Section -->
+        <div class="col-lg-6 d-none d-lg-flex bg-dark text-white flex-column justify-content-center align-items-center p-5">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+                 alt="CRM Illustration"
+                 class="img-fluid mb-4"
+                 style="max-width:300px;">
+
+            <h1 class="fw-bold text-center">
+                CRM Management System
+            </h1>
+
+            <p class="text-center text-light mt-3 fs-5">
+                Manage Customers, Appointments, Notes and Reports
+                from one centralized platform.
+            </p>
+
+            <div class="row text-center mt-5 w-100">
+
+                <div class="col-4">
+                    <div class="card bg-secondary border-0 text-white">
+                        <div class="card-body">
+                            <h2>👥</h2>
+                            <h6>Customers</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card bg-secondary border-0 text-white">
+                        <div class="card-body">
+                            <h2>📅</h2>
+                            <h6>Appointments</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card bg-secondary border-0 text-white">
+                        <div class="card-body">
+                            <h2>📊</h2>
+                            <h6>Reports</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Login Section -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+
+            <div class="card border-0 shadow-lg rounded-4" style="width:450px;">
+
+                <div class="card-body p-5">
+
+                    <div class="text-center mb-4">
+
+                        <h2 class="fw-bold">
+                            CRM Login
+                        </h2>
+
+                        <p class="text-muted">
+                            Access your dashboard securely
+                        </p>
+
+                    </div>
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-pills nav-fill bg-light rounded p-2 mb-4">
+
+                        <li class="nav-item">
+                            <button class="nav-link active"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#adminPanel"
+                                    type="button">
+                                👨‍💼 Admin
+                            </button>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#customerPanel"
+                                    type="button">
+                                👤 Customer
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- Admin Login -->
+                        <div class="tab-pane fade show active" id="adminPanel">
+
+                            <form action="AdminLoginServlet" method="post">
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control"
+                                           name="email"
+                                           placeholder="admin@crm.com"
+                                           required>
+                                </div>
+
+								   <div class="mb-3">
+									    <label class="form-label fw-semibold">
+									        Password
+									    </label>
+									
+									    <div class="input-group">
+									        <input type="password"
+									               id="adminPassword"
+									               class="form-control"
+									               name="password"
+									               placeholder="Enter Password"
+									               required>
+									
+									        <button class="btn btn-outline-secondary"
+									                type="button"
+									                onclick="toggleAdminPassword()">
+									            👁
+									        </button>
+									    </div>
+									</div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="remember">
+
+                                        <label class="form-check-label">
+                                            Remember Me
+                                        </label>
+                                    </div>
+
+                                    <a href="#" class="text-decoration-none">
+                                        Forgot Password?
+                                    </a>
+
+                                </div>
+
+                                <button type="submit"
+                                        class="btn btn-dark w-100 py-2 fw-semibold">
+                                    Login as Admin
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                        <!-- Customer Login -->
+                        <div class="tab-pane fade" id="customerPanel">
+
+                            <form action="CustomerLoginServlet" method="post">
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control"
+                                           name="email"
+                                           placeholder="customer@email.com"
+                                           required>
+                                </div>
+
+                                <div class="mb-3">
+								    <label class="form-label fw-semibold">
+								        Password
+								    </label>
+								
+								    <div class="input-group">
+								        <input type="password"
+								               id="customerPassword"
+								               class="form-control"
+								               name="password"
+								               placeholder="Enter Password"
+								               required>
+								
+								        <button class="btn btn-outline-secondary"
+								                type="button"
+								                onclick="toggleCustomerPassword()">
+								            👁
+								        </button>
+								    </div>
+								</div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="remember">
+
+                                        <label class="form-check-label">
+                                            Remember Me
+                                        </label>
+                                    </div>
+
+                                    <a href="#" class="text-decoration-none">
+                                        Forgot Password?
+                                    </a>
+
+                                </div>
+
+                                <button type="submit"
+                                        class="btn btn-dark w-100 py-2 fw-semibold">
+                                    Login as Customer
+                                </button>
+
+                                <p class="text-center mt-4 mb-0">
+
+                                    New Customer?
+
+                                    <a href="register.html"
+                                       class="text-decoration-none fw-semibold">
+                                        Register Here
+                                    </a>
+
+                                </p>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script>
+function toggleAdminPassword() {
+    var pass = document.getElementById("adminPassword");
+
+    if (pass.type == "password") {
+        pass.type = "text";
+    } else {
+        pass.type = "password";
+    }
+}
+
+function toggleCustomerPassword() {
+    var pass = document.getElementById("customerPassword");
+
+    if (pass.type == "password") {
+        pass.type = "text";
+    } else {
+        pass.type = "password";
+    }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
